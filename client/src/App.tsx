@@ -1,16 +1,15 @@
 
 
-import { Button } from '@shadcn/components/ui/button'
-import './App.css'
 
+import './App.css'
+import {RouterProvider } from 'react-router-dom'
+import appRouter from './utils/Routes'
 function App() {
+ 
  
   return (
     <>
-    <Button>Lets build food app
-      
-    </Button>
-      
+   <RouterProvider router={appRouter}></RouterProvider>
     </>
   )
 }

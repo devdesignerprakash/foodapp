@@ -4,6 +4,7 @@ import Login from '../auth/Login';
 import MainLayout from '../components/MainLayout'
 import Register from "../auth/Register";
 import ForgetPassword from "../auth/ForgetPassword";
+import ResetPassword from "../auth/ResetPassword";
 const appRouter=createBrowserRouter([
   {
     path:"/",
@@ -27,6 +28,10 @@ const appRouter=createBrowserRouter([
   {
     path:"/forget-password",
     element:<ForgetPassword/>
+  }
+  ,{
+    path:"/reset-password",
+    element:<ResetPassword/>
   }
 
  ])

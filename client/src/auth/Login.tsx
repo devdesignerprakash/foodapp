@@ -78,6 +78,9 @@ const Login = () => {
           ) : (
             <Button className="w-full" type="submit">Login</Button>
           )}
+          <div className="mt-4">
+            <Link to="/forget-password" className="text-sm text-blue-500">Forgot Password</Link>
+          </div>
         </div>
         <Separator/>
         <p> Don't have Account?{" "}

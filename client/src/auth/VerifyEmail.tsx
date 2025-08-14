@@ -1,3 +1,4 @@
+import { Button } from "@shadcn/components/ui/button";
 import { Input } from "@shadcn/components/ui/input";
 import { useRef, useState } from "react";
 
@@ -13,7 +14,15 @@ const VerifyEmail = () => {
       inputRef.current[index+1]?.focus();
     }
   }
-// const handleKeyPress=()=>{
+const handleBackkeyPress=(index:number)=>{
+  const newOtp=[...otp]; //copy of otp
+  newOtp[otp.length-1]="";
+  setOtp(newOtp);
+  if(otp.length>0){
+  inputRef.current[index - 1]?.focus();
+  }
+ 
+}
 
 // }
   return (
@@ -36,8 +45,12 @@ const VerifyEmail = () => {
                 maxLength={1}
                 value={data}
                 onChange={(e)=>handleChange(index, e.target.value)}
+                onKeyDown={(e)=>e.key=="Backspace"?handleBackkeyPress(index):null}
               />
             ))}
+          </div>
+          <div className="w-full mt-2 items-center justify-center">
+          <Button className="w-1/2">Verify</Button>
           </div>
         </form>
       </div>

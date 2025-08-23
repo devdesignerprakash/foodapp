@@ -72,11 +72,11 @@ const Login = () => {
         </div>
         <div className="mb-10">
           {loading ? (
-            <Button className="w-full">
+            <Button className="custom-btn w-full">
               <Loader className="mr-4 h-4 w-4 animate-spin" /> Please Wait....
             </Button>
           ) : (
-            <Button className="w-full" type="submit">Login</Button>
+            <Button className=" custom-btn w-full" type="submit">Login</Button>
           )}
           <div className="mt-4">
             <Link to="/forget-password" className="text-sm text-blue-500">Forgot Password</Link>

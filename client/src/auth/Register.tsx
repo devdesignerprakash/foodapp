@@ -123,11 +123,11 @@ const Register = () => {
         </div>
         <div className="mb-10">
           {loading ? (
-            <Button className="w-full">
+            <Button className="custom-btn w-full">
               <Loader className="mr-4 h-4 w-4 animate-spin" /> Please Wait....
             </Button>
           ) : (
-            <Button className="w-full" type="submit">Login</Button>
+            <Button className="custom-btn w-full" type="submit">Register</Button>
           )}
         </div>
         <Separator/>

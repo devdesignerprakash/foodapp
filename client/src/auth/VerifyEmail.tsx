@@ -50,7 +50,7 @@ const handleBackkeyPress=(index:number)=>{
             ))}
           </div>
           <div className="w-full mt-2 items-center justify-center">
-          <Button className="w-1/2">Verify</Button>
+          <Button className="custom-btn w-1/2">Verify</Button>
           </div>
         </form>
       </div>

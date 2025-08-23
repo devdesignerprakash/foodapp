@@ -16,12 +16,12 @@ const ForgetPassword = () => {
             </div>
             <div className="w-full relative">
             {loading ? (
-                <Button className="w-full" disabled>
+                <Button className="custom-btn w-full" disabled>
                     <Loader className="mr-4 h-4 w-4 animate-spin" /> Please Wait....
                 </Button>
             ) : (
                 <>
-                <Button className="w-full" type="submit">Send Reset Link</Button>
+                <Button className=" custom-btn w-full" type="submit">Send Reset Link</Button>
                 <Link2Icon className="absolute left-27 top-1.75 text-white" />
                 </>
                 

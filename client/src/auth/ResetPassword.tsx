@@ -16,12 +16,12 @@ const ResetPassword = () => {
             </div>
             <div className="w-full">
             {loading ? (
-                <Button className="w-full" disabled>
+                <Button className="custom-btn w-full" disabled>
                     <Loader className="mr-4 h-4 w-4 animate-spin" /> Please Wait....
                 </Button>
             ) : (
                 <>
-                <Button className="w-full" type="submit">Reset Password</Button>
+                <Button className="custom-btn w-full" type="submit">Reset Password</Button>
                 </>
                 
             )}

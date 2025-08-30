@@ -6,16 +6,22 @@ import Register from "../auth/Register";
 import ForgetPassword from "../auth/ForgetPassword";
 import ResetPassword from "../auth/ResetPassword";
 import VerifyEmail from "../auth/VerifyEmail";
-import Navbar from "../components/Navbar";
+import HeroSection from "../components/HeroSection";
+import MainLayout from "../layout/MainLayout";
+import Profile from "../components/Profile";
 const appRouter=createBrowserRouter([
   {
     path:"/",
-    element:<Navbar/>,
+    element:<MainLayout/>,
     children:[
-      // {
-      //   path:"/login",
-      //   element:<Login/>
-      // }
+      {
+        path:"/",
+        element:<HeroSection/>
+      },
+      {
+        path:"/profile",
+        element:<Profile/>
+      }
     ]
   },
 
